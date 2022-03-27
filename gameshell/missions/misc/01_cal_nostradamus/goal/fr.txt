@@ -1,0 +1,18 @@
+Objectif
+========
+
+Nostradamus a prévu une conjonction spectaculaire des astres pour 
+le $DD-$MM-$YYYY.
+Mais sur quel jour de la semaine tombera donc cette date ?
+
+Lorsque vous le connaissez, lancez la commande ``gsh check``.
+
+
+Commandes utiles
+================
+
+cal
+  Affiche un petit calendrier du mois courant.
+
+cal ANNEE
+  Affiche un petit calendrier pour l'année donnée.

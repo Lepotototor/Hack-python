@@ -1,0 +1,34 @@
+Objectif
+========
+
+Le lutin compare sa magie avec une fée. Ils se sont retrouvés dans 
+la cave, et le lutin conjure des morceaux de charbon pendant que la 
+fée conjure de délicats flocons de neige.
+
+Supprimez les sortilèges du lutin ainsi que tous les morceaux de 
+charbon qui jonchent la cave, mais laissez les flocons !
+
+
+Remarque
+--------
+
+Ne tuez ni le lutin ni la fée.
+
+
+Commandes utiles
+================
+
+pstree PID
+  Affiche la liste des processus descendants de PID, avec leurs 
+  liens de parenté.
+  Si PID est omis, affiche tous les processus avec leurs liens de 
+  parenté.
+
+  Options utiles :
+    -p : affiche également les PID des processus
+    $$ : cette variable contient le numéro
+         du shell et peut prendre la place du PID.
+
+kill N
+  Envoie le signal d'arrêt au processus numéro N.
+  Note : N est appelé le PID ("process identifier").

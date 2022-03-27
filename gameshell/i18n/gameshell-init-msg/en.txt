@@ -1,0 +1,10 @@
+Run the command
+    $ gsh goal
+to discover your first mission.
+
+You can check the mission has been completed with
+    $ gsh check
+
+The command
+    $ gsh help
+displays the list of available (gsh) commands.

@@ -1,0 +1,25 @@
+Objectif
+========
+
+Les araignées deviennent plus intelligentes : elles ont appris à se 
+cacher.
+Supprimez toutes les araignées qui se cachent dans la cave, sans 
+toucher les chauve-souris.
+
+
+Motifs shell
+============
+
+*
+  Le caractère "*" est un joker pour n'importe quelle chaine de 
+  caractères (y compris la chaine vide).
+
+?
+  Le caractère "?" est un joker pour n'importe caractère.
+
+
+Remarque
+--------
+
+Les jokers "*" et "?" ne voient pas les fichiers cachés, il faut 
+ajouter un point explicite au début du motif.

@@ -1,0 +1,4 @@
+#!/bin/sh
+export MISSION_DIR="$GSH_ROOT/missions/stdin_stdout_stderr/05_stdout_stderr_redirection_merlin"
+export TEXTDOMAIN=""
+exec "/home/lepotototor/Bureau/gameshell/.tmp/merlin" "$@"

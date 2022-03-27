@@ -1,0 +1,38 @@
+Objectif
+========
+
+À côté du Château se trouve une échoppe. Les habitants achètent 
+souvent à crédit et remboursent quand ils peuvent.
+Afin de garder le compte des dettes de chacun, le propriétaire note 
+tout sur un parchemin. Lorsqu'une dette est remboursée, il inscrit 
+"PAYÉ" à côté celle-ci.
+
+Combinez plusieurs commandes avec le pipe ``|`` afin de déterminer 
+la dette du roi.
+
+Remarque
+--------
+
+Vous ne disposez que de 3 commandes pour atteindre cet objectif.
+Vous pouvez réinitialiser le compteur avec la commande ``gsh 
+reset``, mais dans ce cas, l'échoppe sera re-générée.
+
+
+Indice
+------
+
+Lorsqu'il n'y a pas de sous répertoires, une alternative à ``find . 
+-name '*sans_interet*'`` est d'utiliser ``ls`` et de filtrer le 
+résultat avec ``grep`` :
+    $ ls | grep "sans_interet"
+
+
+Commandes utiles
+================
+
+grep [OPTIONS] CHAINE FICHIER1 ... FICHIERn
+  Affiche, parmi les lignes des fichiers, celle contenant la chaine.
+  Si aucun fichier n'est donné, ``grep`` utilise l'entrée standard.
+
+  Option utile :
+    -v : affiche les lignes qui **ne contiennent pas** la chaine.

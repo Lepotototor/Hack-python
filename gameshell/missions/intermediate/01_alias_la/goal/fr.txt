@@ -1,0 +1,24 @@
+Objectif
+========
+
+Chercher les fichiers cachés prend trop de temps.
+
+Créez un raccourci "la" qui lance la commande ``ls -A`` pour 
+afficher les fichiers, en incluant les fichiers cachés, avec 
+seulement 2 lettres !
+
+Définissez pour ceci le synonyme
+
+  la='ls -A'
+
+et vérifiez que ``la`` affiche bien les fichiers cachés.
+
+Ça tombe bien, il y a un joli caillou caché juste là où vous êtes.
+
+
+Commandes utiles
+================
+
+alias CHAINE='COMMANDE'
+  Crée un synonyme pour une chaine de caractères, qui sera remplacée 
+  par la commande.

@@ -1,0 +1,24 @@
+Objectif
+========
+
+Au premier étage du donjon se trouvent de superbes tableaux. Ajoutez 
+une copie du plus vieux d'entre eux à votre coffre.
+
+
+Objectif secondaire
+-------------------
+
+Admirez aussi les trois tableaux.
+
+
+Commandes utiles
+================
+
+ls -l
+  Affiche la liste des fichiers avec de nombreuses informations, 
+  incluant la date de modification.
+
+cat FICHIER
+  Affiche le contenu du fichier à l'écran.
+  Note : ``cat`` est une abréviation pour "concat", car la commande 
+  permet de concaténer plusieurs fichiers.

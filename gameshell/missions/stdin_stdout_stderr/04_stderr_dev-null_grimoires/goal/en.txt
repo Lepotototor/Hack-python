@@ -1,0 +1,53 @@
+Mission goal
+============
+
+Merlin's old alchemy books are kept in his office, in the library. 
+You need to output a list of all the books containing the alchemical 
+compound 'gsh' (for "Glutathione").
+Beware, it can be spelled with a mix of letters in upper and 
+lowercase.
+
+Some of those books are locked, and you are not allowed to consult 
+them. Ignore them.
+
+Remark
+------
+
+Only the list of books is required. The chemical compounds should 
+not be shown on the screen.
+
+
+Useful commands
+===============
+
+grep STRING FILE1 ... FILEn
+  Search for a string inside a file and print the corresponding 
+  lines.
+  Some interesting options are
+    -l : do not print the lines, but only the filenames containing
+         the string
+    -i : do not differentiate between uppercase and lowercase
+
+COMMAND  >  FILE
+  Send messages (stdout) to the file.
+  (The file is overwritten.)
+
+COMMAND  2>  FICHIER
+  Send error messages (stderr) to the file.
+  (The file is overwritten.)
+
+/dev/null
+  "Virtual" file that is universally empty: anything sent to it is 
+  disappears.
+
+Explanations
+------------
+
+Every command can output messages to the screen in two ways:
+  - standard printing ("stdout")
+  - error printing ("stderr")
+By default, both kind of messages are shown on the screen.
+
+It is however possible to redirect both of them to files 
+independently.
+

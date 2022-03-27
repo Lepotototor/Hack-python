@@ -1,0 +1,15 @@
+
+Bravo !
+
+Vous avez terminé toutes les missions.
+
+Vous pouvez maintenant quitter GameShell ou retourner faire des 
+missions déjà validées.
+
+Utilisez ``gsh HELP`` pour obtenir la liste de toutes les commandes 
+GameShell.
+Les commandes ``gsh index`` et ``gsh goto N`` sont particulièrement 
+intéressantes.
+
+Remarque : le mot de passe admin a été changé en '$password'.
+

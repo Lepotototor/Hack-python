@@ -1,0 +1,34 @@
+Mission goal
+============
+
+Merlin has turned crazy... He paces around the observatory tower and 
+mumbles incoherently.
+
+You need to filter out his ramblings to discover the secret key he 
+is the only one to know.
+
+Hint
+----
+
+It is likely that Merlin's message is riddled with errors.
+To complete this mission, you have to give the secret key **using a 
+file redirection**.
+
+
+Useful commands
+===============
+
+./FILE
+  Run an executable file as a program. Needless to say that Merlin 
+  is executable...
+
+COMMAND  >  FILE
+  Send standard output (stdout) for the command to a file.
+  (The file is overwritten.)
+
+COMMAND  2>  FICHIER
+  Send error output (stderr) for the command to a file.
+  (The file is overwritten.)
+
+COMMAND  <  FILE
+  Send the file to the standard input (stdin) of the command.

@@ -1,0 +1,18 @@
+Mission goal
+============
+
+Collect all the coins that you can find in the garden in front of 
+the castle, and put them in your chest in your hut in the forest.
+
+
+Useful commands
+===============
+
+mv FILE1 FILE2 ... FILEn DIRECTORY
+  Move the files to the directory.
+  Remark: ``mv`` is an abbreviation of "move".
+
+~
+  The "~" symbol is an abbreviation for the initial directory.
+  Example: wherever you are, ``~/Tavern`` denotes the directory (or 
+  file) "Tavern" in the initial directory.

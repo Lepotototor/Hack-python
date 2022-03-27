@@ -1,0 +1,14 @@
+Mission goal
+============
+
+Go back to the cellar and get rid of all the spiders. Leave the bats 
+alone: they appear on the castle's coat of arms and are said to 
+confer luck.
+
+
+Useful commands
+===============
+
+rm FILE1 FILE2 ... FILEn
+  Delete the files (permanently).
+  Remark: ``rm`` is an abbreviation for "remove".

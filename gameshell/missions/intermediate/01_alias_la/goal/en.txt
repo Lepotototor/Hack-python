@@ -1,0 +1,22 @@
+Mission goal
+============
+
+Checking for hidden files is taking too long!
+
+Create an alias "la" to run the command ``ls -A`` in order to list 
+all files, including hidden ones, with only 2 letters.
+
+Define the synonym
+
+  la='ls -A'
+
+and check that it works as expected.
+
+How fortunate, there is a nice rock hidden just where you are.
+
+
+Useful commands
+===============
+
+alias STRING='COMMAND'
+  Create a synonym for a string, that will stand for a command.

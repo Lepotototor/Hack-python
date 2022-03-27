@@ -1,0 +1,28 @@
+Objectif
+========
+
+Un lutin espiègle a lancé un sortilège qui fait apparaitre des 
+traces de charbon un peu partout dans le château.
+Trouvez ce sortilège et supprimez-le.
+
+
+Remarque
+--------
+
+Le sortilège est un processus.
+
+
+Commandes utiles
+================
+
+$PS
+  Affiche la liste des processus lancés par le shell.
+
+kill N
+  Envoie le signal d'arrêt au processus numéro N.
+  Note : N est appelé le PID ("process identifier") du processus.
+
+clear
+  Efface l'écran du terminal.
+  La combinaison de touches "Control-L" fait la même chose et est 
+  souvent plus rapide à utiliser dans un terminal.

@@ -1,0 +1,27 @@
+Mission goal
+============
+
+A mischievous imp cast a spell that puts smudges of coal everywhere 
+in the castle.
+Find this spell and remove it.
+
+Remark
+------
+
+The spell is a process.
+
+
+Useful commands
+===============
+
+$PS
+  List the processes that are currently executed by the shell.
+
+kill N
+  Send the termination signal to process number N.
+  Remark: N is called PID, or "process identifier".
+
+clear
+  Clear the screen.
+  The keybinding "Control-L" does the same and is often quicker to 
+  use in the terminal.

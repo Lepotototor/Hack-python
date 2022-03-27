@@ -1,0 +1,38 @@
+Objectif
+========
+
+Retrouvez les deux pièces d'or dans le labyrinthe du jardin et 
+déplacez les dans votre coffre.
+
+
+Commandes utiles
+================
+
+find CONDITION
+  Cherche des fichiers à partir du répertoire courant.
+
+  Les conditions peuvent porter sur le nom des fichiers, leur 
+  taille, leur date de création, etc. Par exemple,
+    -name "MOTIF"
+    -iname "MOTIF"
+  sont 2 conditions sur les noms des fichiers.
+
+man COMMANDE
+  Affiche l'aide de la commande.
+
+  Touches utilisées par la commande "man"
+    q           quitter
+    Espace      faire défiler une page
+    / CHAINE    rechercher une chaine
+    n           aller à l'occurrence suivante de
+                la chaine cherchée
+
+Remarque
+--------
+
+La description de la commande ``find`` est volontairement succincte. 
+Vous devrez consulter l'aide pour comprendre comment l'utiliser. 
+(Vous pouvez par exemple faire une recherche sur la chaine "-name" 
+dans le manuel...)
+
+

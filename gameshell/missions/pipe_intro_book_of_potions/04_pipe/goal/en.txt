@@ -1,0 +1,46 @@
+Mission goal
+============
+
+The old hermit notices your interest for potion recipes, and sees 
+promise in your ability to lookup lists of ingredients. He 
+challenges you to find the steps for the elixir of Youth.
+
+In order to validate the mission, your last command prior to ``gsh 
+check`` must show the steps for the recipe and nothing else.
+
+
+Useful commands
+===============
+
+cat FILE1 FILE2 ... FILEn
+  Display the contents of the files in order.
+
+tail
+  Print the last 10 lines sent on the standard input.
+
+tail -n K
+  Print the last K lines sent on the standard input.
+
+COMMAND1  |  COMMAND2
+  Run the two commands, feeding the "standard output" of the 
+  former into the "standard input" of the latter.
+  Remark: by analogy with plumbing "|" is called "pipe".
+
+
+Explanations
+============
+
+Many of Unix commands process text: they receive text as input and 
+produce text as output.
+
+It is common for those commands to write their output to their 
+"standard output", which means that (by default) the output is 
+written into the terminal.
+
+Most of those commands can receive input either through files (given 
+as arguments) or from their "standard input". For example:
+- ``head FILE`` reads its input from the file,
+- ``head`` reads its input on the standard input.
+
+By default, data from the standard input is read from the keyboard, 
+but a pipe can change that.

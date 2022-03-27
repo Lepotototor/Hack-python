@@ -1,0 +1,24 @@
+Objectif
+========
+
+Toutes les tapisseries de la grande salle du château sont 
+également très élégantes. Mettez en une copie dans votre coffre.
+
+
+Commandes utiles
+================
+
+cp FICHIER1 FICHIER2 ... FICHIERn REPERTOIRE
+  Copie les fichiers dans le répertoire.
+  Note : ``cp`` est une abréviation pour "copy".
+
+
+Motifs shell
+============
+
+*
+  Le caractère "*" est un joker pour n'importe quelle chaine de 
+  caractères.
+
+?
+  Le caractère "?" est un joker pour n'importe caractère.

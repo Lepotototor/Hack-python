@@ -1,0 +1,29 @@
+Mission goal
+============
+
+Create a file named "journal.txt" in your chest and write a 
+short message in it.
+You can use this file to record your notes and solutions for 
+the upcoming missions.
+
+Details
+-------
+
+``nano`` is a command-line text editor. You can use it whenever you 
+need to edit a file from the shell.
+
+
+Useful commands
+===============
+
+nano FILE
+  Edit the file from the shell.
+  (If the file does not exist, it will be created.)
+
+  Keybindings are listed at the bottom of the screen (the "^" 
+  symbol means "Control"). The most important ones are:
+    Control-x     quit
+    Control-o     save
+    Control-w     search for a string
+
+  Remark: do not use Control-s or Control-z!

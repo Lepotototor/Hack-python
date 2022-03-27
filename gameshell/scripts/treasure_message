@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# display a treasure message
+
+GSH_ROOT=$(cd "$(dirname "$0")/.." && pwd -P)
+GSH_LIB=$GSH_ROOT/lib
+GSH_CONFIG=$GSH_ROOT/.config
+
+display_message() {
+  treasure_msg_file=${1:--}
+  WIDTH=31  # width of treasure-chest.txt file (wc -L)
+
+  # get the width
+  if [ "${COLUMNS:-0}" -ge 80 ]
+  then
+    reflow_width=$((COLUMNS - 35))
+  else
+    parchment -B ASCII "$treasure_msg_file"
+    return $?
+  fi
+
+  # limit the reflow width to 100 to avoid too wide parchments
+  # [ "$reflow_width" -gt 100 ] && reflow_width=100
+
+  echo
+  "$GSH_ROOT/scripts/reflow.awk" -v width=$reflow_width "$treasure_msg_file" |
+    paste "$GSH_LIB/ascii-art/treasure-chest.txt" - |
+    awk -v width=$WIDTH -v seed_file="$GSH_CONFIG/PRNG_seed" -v PID=$$ '
+BEGIN{
+  getline seed < seed_file;
+  if (seed) srand(seed); else srand();
+  chars = ".\",-_ ";
+}
+/^\t/ {
+  s = "";
+  for (i=0; i<width; i++) {
+    if (rand() < 0.05) {
+      s = s "" substr(chars, int(rand()*length(chars)), 1);
+    } else {
+      s = s " ";
+    }
+  }
+  print s "" $0;
+}
+END {
+  if (seed) printf("%d\n", int(2^30 * rand())+PID) > seed_file;
+}
+/^[^\t]/ { print $0; }
+' | column -t -s"	"
+  echo
+}
+
+display_message "$@"

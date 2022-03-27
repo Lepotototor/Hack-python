@@ -1,0 +1,34 @@
+Objectif
+========
+
+Allez tout en haut du donjon.
+
+
+Commandes utiles
+================
+
+cd LIEU
+  Se déplace vers le lieu donné.
+  Note : ``cd`` est une abréviation pour "change directory".
+
+ls
+  Liste les lieux accessibles depuis la position actuelle.
+  Note : ``ls`` est une abréviation pour "liste".
+
+pwd
+  Affiche la position actuelle.
+  Note : ``pwd`` est une abréviation pour "print working directory".
+
+gsh reset
+  Ré-initialise la mission au début.
+
+
+Remarque
+--------
+
+Les termes apparaissant en MAJUSCULES dans les commandes sont des 
+méta-variables : vous devez les remplacer par des valeurs (chaines 
+de caractères) appropriées.
+
+La plupart des systèmes de fichiers différencient les caractères 
+majuscules et minuscules. Faites attention à utiliser le bon chemin.

@@ -1,0 +1,18 @@
+Mission goal
+============
+
+Nostradamus predicted a spectacular star conjunction on the 
+$MM-$DD-$YYYY.
+But what will the day of the week be on that date?
+
+When you have it, run the command ``gsh check``.
+
+
+Useful commands
+===============
+
+cal
+  Print a calendar for the current month.
+
+cal YEAR
+  Print a calendar for the given year.

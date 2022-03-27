@@ -1,0 +1,10 @@
+Utilisez la commande
+  $ gsh goal
+pour découvrir votre première mission.
+
+Vous pouvez vérifier si l'objectif est atteint avec
+  $ gsh check
+
+La commande
+  $ gsh help
+affiche la liste des commandes (gsh) disponibles.

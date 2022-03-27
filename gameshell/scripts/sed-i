@@ -1,0 +1,29 @@
+#!/bin/sh
+
+## posix way to do sed "in place"
+
+sed_i() {
+  if [ $# -gt 2 ]
+  then
+    echo "usage: sed-i 'EXPRESSION' FILENAME" >&2
+    return 1
+  fi
+  expr=$1
+  filename=$2
+  tmp=$(mktemp)
+  bak="$filename~"
+  trap "rm -f \"$tmp\" \"$bak\"" TERM INT
+  if sed -e "$expr" "$filename" > "$tmp"
+  then
+    cp "$filename" "$bak"
+    trap "" TERM INT
+    cp "$tmp" "$filename"
+    rm -f "$tmp" "$bak"
+  else
+    ret=$?
+    rm -f "$tmp" "$bak"
+    return $ret
+  fi
+}
+
+sed_i "$@"

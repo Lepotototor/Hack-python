@@ -1,0 +1,33 @@
+Mission goal
+============
+
+Go to the top of the main tower of the castle.
+
+
+Useful commands
+===============
+
+cd LOCATION
+  Move to the given location.
+  Remark: ``cd`` is an abbreviation for "change directory".
+
+pwd
+  Show the path to your current location.
+  Remark: ``pwd`` is an abbreviation for "print working directory".
+
+ls
+  Show a list of locations that are currently accessible.
+  Remark: ``ls`` is an abbreviation of "list".
+
+gsh reset
+  Restart the mission from the beginning.
+
+
+Remarks
+-------
+
+UPPERCASE words appearing in commands are meta-variables: you need 
+to replace them by appropriate (string) values.
+
+Most filesystems treat uppercase and lowercase characters 
+differently. Make sure you use the correct path.

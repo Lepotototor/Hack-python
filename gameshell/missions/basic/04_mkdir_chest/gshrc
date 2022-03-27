@@ -1,0 +1,1 @@
+export GSH_CHEST="$(eval_gettext '$GSH_HOME/Forest')/$(gettext "Hut")/$(gettext "Chest")"

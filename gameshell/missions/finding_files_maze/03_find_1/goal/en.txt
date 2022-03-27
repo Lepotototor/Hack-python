@@ -1,0 +1,37 @@
+Mission goal
+============
+
+Find the gold coins in the maze hidden in the garden and move 
+them to your chest.
+
+
+Useful commands
+===============
+
+find CONDITION
+  Search for files satisfying the condition, starting from your 
+  current working directory.
+
+  There are many possible conditions. They can constrain the
+  file names, size, modification date, etc. For example 
+    -name "PATTERN"
+    -iname "PATTERN"
+  are both related to file names.
+
+man COMMAND
+  Display the manual of the command.
+
+  Important key bindings:
+    q           quit
+    Space       scroll down one page
+    / STRING    search for the string
+    n           find the next occurrence of the
+                search string
+
+Remark
+------
+
+The description of the ``find`` command is deliberately kept short. 
+You will find more information in the manual. (You can for exemple 
+search for the string "-name" in the manual.)
+

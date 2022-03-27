@@ -1,0 +1,14 @@
+Objectif
+========
+
+Retournez dans la cave, et supprimez les araignées qui s'y trouvent.
+Laissez les chauves-souris tranquilles : elles apparaissent sur le 
+blason du chateau et on dit qu'elles portent chance.
+
+
+Commandes utiles
+================
+
+rm FICHIER1 FICHIER2 ... FICHIERn
+  Supprime (définitivement) les fichiers.
+  Note : ``rm`` est une abréviation pour "remove".

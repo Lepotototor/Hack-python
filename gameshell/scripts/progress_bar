@@ -1,0 +1,280 @@
+#!/bin/sh
+
+# display a small animation until the given PID stops
+
+. gsh_gettext.sh
+
+TEXTDOMAIN=gsh
+
+get_design() {
+  case "$1" in
+    0 | bat)                  design=bat ;;
+    1 | snake)                design=snake ;;
+    2 | caterpillar)          design=caterpillar ;;
+    3 | snail)                design=snail ;;
+    4 | spider)               design=spider ;;
+    5 | fish-back-and-forth)  design=fish-back-and-forth ;;
+    6 | duck)                 design=duck ;;
+    7 | centipede)            design=centipede ;;
+    8 | ant)                  design=ant ;;
+    9 | fish)                 design=fish ;;
+    10 | large-fish)          design=large-fish ;;
+    11 | dots)                design=dots ;;
+    12 | bar)                 design=bar ;;
+    13 | rotation)            design=rotation ;;
+  esac
+}
+
+init_data() {
+  design=$1
+
+  case $design in
+    "dots")
+      # simple dots
+      STR='.'
+      PRE=''
+      POST='\n'
+      MSG=''
+      DELAY=0.2
+      ;;
+
+    "bar")
+      # simple dots
+      STR='='
+      PRE='['
+      POST=']\n'
+      MSG=''
+      DELAY=0.2
+      ;;
+
+    "rotation")
+      # rotating bar
+      STR='\b|
+\b/
+\b-
+\b\'
+      PRE='-'
+      POST='\b \b'
+      MSG=""
+      DELAY=0.1
+      ;;
+
+    "bat")
+      # flying bat
+      STR='\b\b\b \,/
+\b\b\b \,/
+\b\b\b \,/
+\b\b\b \,/
+\b\b\b /`\
+\b\b\b /`\
+\b\b\b /`\
+\b\b\b /`\'
+
+      PRE='   '
+      POST='\b\b\b   \r'
+      MSG="$(gettext "While you are waiting, a bat flies by...")\\n"
+      DELAY=0.1
+      ;;
+
+    "snake")
+      # slithering snake
+      STR='\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b __/\__/\__/\<:>
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b _/\__/\__/\_<:>
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b /\__/\__/\__<:>
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b \__/\__/\__/<:>'
+      PRE='\__/\__/\__/<:>'
+      POST='\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b               \r'
+      MSG="$(gettext "While you are waiting, a snake slithers by...")\\n"
+      DELAY=0.2
+      ;;
+
+    "caterpillar")
+      STR='\b\b\b\b\b\b\b\b\b ___^___@
+\b\b\b\b\b\b\b\b __/\__@
+\b\b\b\b\b\b\b _/^\_@
+\b\b\b\b\b\b __/\__@
+\b\b\b\b\b\b\b ___^___@
+\b\b\b\b\b\b\b\b\b ________@'
+      PRE='_______@"'
+      POST='\b\b\b\b\b\b\b\b\b         \r'
+      MSG="$(gettext "While you are waiting, a caterpillar crawls by...")\\n"
+      DELAY=0.2
+      ;;
+
+    "snail")
+      STR='\b\b\b\b\b\b\b_(@)__/"
+\b\b\b\b\b\b\b\b__(@)_/"
+\b\b\b\b\b\b\b\b _(@)_/"'
+      PRE='_(O)_/"'
+      POST='\b\b\b\b\b\b\b\b        \r'
+      MSG="$(gettext "While you are waiting, a snail goes by...")\\n"
+      DELAY=0.3
+      ;;
+
+    "spider")
+      # FIXME: not sure I understand the escaping here!
+      STR='\b\b\b\b\b //o\\\\\\\\
+\b\b\b\b\b //o\\\\\\\\
+\b\b\b\b\b///o\\\\
+\b\b\b\b\b///o\\\\'
+      PRE='//o\\\\'
+      POST='\b\b\b\b\b     \r'
+      MSG="$(gettext "While you are waiting, a spider crawls by...")\\n"
+      DELAY=0.2
+      ;;
+
+    "duck")
+      STR='\b\b\b\b\\_@<
+\b\b\b\b \\_@=
+\b\b\b\b\\_@=
+\b\b\b\b\\_@<'
+      PRE='\\_@<'
+      POST='\b\b\b\b\b     \r'
+      MSG="$(gettext "While you are waiting, a duck swims by...")\\n"
+      DELAY=0.1
+      ;;
+
+    "fish-back-and-forth")
+      # Swimming fish (small) going back and forth
+      STR='\b\b\b ><>
+\b\b\b ><>
+\b\b\b ><>
+\b\b\b ><>
+\b\b\b ><>
+\b\b\b ><>
+\b\b\b ><>
+\b\b\b ><>
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><
+\b\b\b   \b\b\b\b<><'
+      PRE='><>'
+      POST='\b\b\b   \r'
+      MSG="$(gettext "While you are waiting, you see a fish swimming in circles...")\\n"
+      DELAY=0.2
+      ;;
+
+    "centipede")
+      # crawling centipede
+      STR='\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b ,`,`,`,`,`,`,`(:)
+\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b`,`,`,`,`,`,`,(:)'
+      PRE='`,`,`,`,`,`,`,(:)'
+      POST='\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                  \r'
+      MSG="$(gettext "While you are waiting, a centipede crawls by...")\\n"
+      DELAY=0.2
+      ;;
+
+    "ant")
+      # crawling ant
+      STR='\b\b\b\b\b >|<()'
+      PRE='>|<()'
+      POST='\b\b\b\b\b     \r'
+      MSG="$(gettext "While you are waiting, an ant crawls by...")\\n"
+      DELAY=0.1
+      ;;
+
+    "fish")
+      # Swimming fish (small)
+      STR='\b\b\b ><>'
+      PRE='><>'
+      POST='\b\b\b   \r'
+      MSG="$(gettext "While you are waiting, a fish swims by...")\\n"
+      DELAY=0.2
+      ;;
+
+    "large-fish")
+      # Swimming fish (large)
+      STR="\b\b\b\b\b\b\b\b ><(((('>"
+      PRE="><(((('>"
+      POST='\b\b\b\b\b\b\b\b        \r'
+      MSG="$(gettext "While you are waiting, a large fish swims by...")\\n"
+      DELAY=0.2
+      ;;
+
+    *)
+      echo "progress_bar: unknown progress kind: '$design'."
+      exit 1
+      ;;
+  esac
+}
+
+animation() {
+  # Hide cursor.
+  tput civis 2>/dev/null
+
+  # NOTE: disabling echoing in terminal during animation doesn't always work in zsh!
+  # running
+  # ./utils/archive.sh -a missions/stdin_stdout_stderr/04_stderr_dev-null_grimoires; ./gameshell.sh -Dqc "gsh auto"
+  # loops!
+  # Removing the stty -echo / stty echo makes the problem go away.
+  # I'm not sure what happens...
+  #
+  [ -n "$GSH_NON_INTERACTIVE" ] || stty -echo 2>/dev/null  # see NOTE
+
+  # the additional \b\b\b   \b\b\b is used to erase the possible ^C
+  # see NOTE
+  trap 'tput cnorm 2>/dev/null; [ -n "$GSH_NON_INTERACTIVE" ] || stty echo 2>/dev/null; printf "\b\b\b   \b\b\b$POST";exit 1' INT TERM QUIT HUP
+
+  # Print initial message.
+  printf "$MSG"
+
+  # Make progress for each character read on [stdin].
+  printf "$PRE"
+  while kill -0 "$PID" 2>/dev/null
+  # we need to test that PID is still active here as well, because the "break"
+  # in the body of the loop takes place in a subshell. It is not possible to
+  # return from the function from there (using "break 2" or "return")!
+  do
+    printf "$STR\n" | while read -r line
+    do
+      printf "$line"
+      sleep $DELAY
+      kill -0 "$PID" 2>/dev/null || break
+    done
+  done
+}
+
+main() {
+
+  design=RANDOM
+  if [ "$1" = "-b" ]
+  then
+    design=$2
+    shift 2
+  fi
+
+  if [ -z "$*" ]
+  then
+    echo "usage: $0 [-d DESIGN] PID" >&2
+    cat <<EOS >&2
+where DESIGN is one of bat, snake, caterpillar, snail, spider,
+fish-back-and-forth, duck, centipede, ant, fish, large-fish, dots, bar,
+rotation
+EOS
+    exit 1
+  fi
+
+  PID=$1
+
+  get_design "$design"
+  if [ "$design" = RANDOM ]
+  then
+    n=$(RANDOM)
+    get_design "$((n%7))"     # only modulo 7 to get the "interesting" animations
+  fi
+
+  init_data "$design"
+  if kill -0 "$PID" 2>/dev/null
+  then
+    animation
+    printf "$POST"
+    tput cnorm 2>/dev/null
+    [ -n "$GSH_NON_INTERACTIVE" ] || stty echo 2>/dev/null
+  fi
+}
+
+main "$@"

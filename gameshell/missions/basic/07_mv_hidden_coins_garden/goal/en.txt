@@ -1,0 +1,28 @@
+Mission goal
+============
+
+Collect all the coins hidden in the garden in front of the castle, 
+and put them in your chest (in your hut in the forest).
+
+
+Secondary objective
+-------------------
+
+Learn how to use the "Tab" key to go faster.
+
+
+Useful commands
+===============
+
+ls -A
+  List all the files of the current directory, including hidden 
+  files. (A file is "hidden" when its name starts with a dot.)
+
+Tab
+  The tabulation key "completes" the name of a file or directory 
+  once you have typed the beginning of its name. This only works
+  if there is only one possible completion.
+
+Tab-Tab
+  Pressing tabulation twice successively shows a list of possible 
+  completions.

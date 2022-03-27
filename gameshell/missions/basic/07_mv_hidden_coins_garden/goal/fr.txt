@@ -1,0 +1,30 @@
+Objectif
+========
+
+Ramassez toutes les pièces qui ont été cachées dans le jardin en 
+face du château, et placez les dans votre coffre (dans votre hutte, 
+dans la forêt).
+
+
+Objectif secondaire
+===================
+
+Apprenez à utiliser la touche "Tabulation" pour aller plus vite.
+
+
+Commandes utiles
+================
+
+ls -A
+  Affiche tous les fichiers du répertoire courant, en incluant les 
+  fichiers cachés.
+  (Un fichier est "caché" si son nom commence par le caractère ".".)
+
+Tab
+  La touche "Tab" complète un nom de fichier ou de répertoire dès 
+  qu'on en tape le début. Cela ne fonctionne que s'il y a une seule 
+  complétion possible.
+
+Tab-Tab
+  Deux appuis successifs sur la touche tabulation affichent la liste 
+  des complétions possibles.

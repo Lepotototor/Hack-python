@@ -1,0 +1,24 @@
+Mission goal
+============
+
+The door to the King's quarter is in the throne room.
+Go to the King's quarter.
+
+Remark
+------
+
+Access to this part of the castle is probably restricted.
+
+
+Useful commands
+===============
+
+ls -l
+  List the files with their important meta-data.
+
+  Access permissions are listed first on each line.
+
+chmod [OPTIONS] FILE
+  Modify the permissions for the file (or directory).
+
+  Refer to the manual to discover which options are available.

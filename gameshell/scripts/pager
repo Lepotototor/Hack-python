@@ -1,0 +1,20 @@
+#!/bin/sh
+
+TEXTDOMAIN=gsh
+
+if [ -n "$GSH_NON_INTERACTIVE" ]
+then
+  cat "$@"
+elif [ -n "$PAGER" ]
+then
+  $PAGER "$@"
+elif command -v less > /dev/null 2>&1
+then
+  LESS= less -rEX -Ps"$(gettext '[Press space to continue, 'q' to quit\.]')$" \
+             -Pm"$(gettext '[Press space to continue, 'q' to quit\.]')$" \
+             -PM"$(gettext '[Press space to continue, 'q' to quit\.]')$" \
+             "$@"
+else
+  more "$@"
+fi
+

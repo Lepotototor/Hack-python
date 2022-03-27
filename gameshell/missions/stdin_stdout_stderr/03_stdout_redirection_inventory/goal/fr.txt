@@ -1,0 +1,29 @@
+Objectif
+========
+
+Les vieux grimoires de Merlin sont stockés dans son bureau, dans la 
+bibliothèque. Vous devez fournir une liste de tous ces grimoires (et 
+rien d'autre) dans un fichier "inventaire.txt" dans le tiroir...
+
+
+Commandes utiles
+================
+
+COMMANDE  >  FICHIER
+  Envoie le résultat de la commande dans le fichier au lieu de 
+  l'afficher sur l'écran.
+
+less FICHIER
+  Affiche un fichier page par page.
+
+  Les touches importantes sont
+    q         quitter
+    Espace    faire défiler une page
+    /         rechercher une chaine
+    n         aller à l'occurrence suivante de la
+              chaine cherchée
+
+ls FICHIER1 ... FICHIERn
+  Affiche la liste des fichiers donnés en argument.
+  Ceci est particulièrement utile si on utilise des motifs avec des 
+  jokers.

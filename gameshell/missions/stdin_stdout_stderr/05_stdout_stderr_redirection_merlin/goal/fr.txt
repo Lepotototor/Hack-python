@@ -1,0 +1,37 @@
+Objectif
+========
+
+Merlin est devenu fou... Il fait les cent pas dans la tour de 
+l'observatoire et tient des propos incohérents, voire 
+incompréhensibles.
+
+Vous devez filtrer son charabia afin de trouver la clé secrète qu'il 
+est le
+seul à connaitre.
+
+Indice
+------
+
+Il y a fort à parier que le message de Merlin soit truffé d'erreurs.
+Pour réussir cette mission, vous devez donner la clé secrète **en 
+utilisant une redirection de fichiers**.
+
+
+Commandes utiles
+================
+
+./FICHIER
+  Exécute un fichier exécutable en tant que programme. Il va de soi 
+  que Merlin l'est (exécutable)...
+
+COMMANDE  >  FICHIER
+  Envoie la sortie standard (stdout) d'une commande vers un fichier.
+  (Le fichier est écrasé.)
+
+COMMANDE  2>  FICHIER
+  Envoie la sortie d'erreurs (stderr) d'une commande vers un 
+  fichier.
+  (Le fichier est écrasé.)
+
+COMMANDE  <  FICHIER
+  Envoie un fichier vers l'entrée standard (stdin) d'une commande.

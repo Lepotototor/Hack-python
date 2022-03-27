@@ -1,0 +1,874 @@
+# DÉBUT DE L'HISTORIQUE DES COMMANDES
+gsh goal
+cd Chateau/Donjon/Premier_etage/Deuxieme_etage/Haut_du_donjon/
+gsh check && gsh goal
+cd
+cd Chateau/Cave/
+gsh check && gsh goal
+cd 
+cd Chateau/Batiment_principal/Salle_du_trone/
+gsh check && gsh goal
+cd
+mkdir Foret/Hutte Foret/Hutte/Coffre/
+gsh check && gsh goal
+ls -a Chateau/Cave/
+rm Chateau/Cave/araignee_1 Chateau/Cave/araignee_2 Chateau/Cave/araignee_3
+gsh check && gsh goal 
+mv Jardin/piece_1 Jardin/piece_2 Jardin/piece_3 Foret/Hutte/Coffre/
+gsh check && gsh goal 
+ls -a Jardin/
+mv Jardin/.21747_piece_3 Jardin/.44050_piece_2  Jardin/.58072_piece_1 Foret/Hutte/Coffre/
+gsh check && gsh goal 
+rm Chateau/Cave/*araignee*
+gsh check && gsh goal 
+rm Chateau/Cave/.*araignee*
+gsh check && gsh goal 
+exit
+gsh goal
+cd Chateau/
+ls
+cd Grande_salle/
+ls
+cd
+cd etendard_? Foret/Hutte/Coffre/
+cp Chateau/Grande_salle/etendard_? Foret/Hutte/Coffre/
+gsh check
+gsh goal
+ls Chateau/Grande_salle/
+cp Chateau/Grande_salle/*_tapisserie_* Foret/Hutte/Coffre/
+gsh goal && gsh check
+gsh goal 
+ls -l Chateau/Donjon/Premier_etage/
+cat Chateau/Donjon/Premier_etage/tableau_QhKzowTK
+cp Chateau/Donjon/Premier_etage/tableau_QhKzowTK Foret/Hutte/Coffre/
+gsh check && gsh goal
+cal 2170
+gsh check && gsh goal
+ls -a
+alias la = ls -A
+alias la = 'ls -A'
+alias la = 'ls -a'
+alias 'la' = 'ls -a'
+alias 'la' = ls -a
+alias la='ls -A'
+gsh check
+gsh goal
+cd Foret/Hutte/Coffre/
+nano journal.txt
+gsh check
+gsh goal
+alias journal='nano ~/Foret/Hutte/Coffre/journal.txt'
+journal
+gsh check && gsh goal
+cd ../../..
+la
+.gshrc
+nano .gshrc
+alias gg='gsh check && gsh goal'
+gg
+gsh goal
+gsh reset
+cd Chateau/Cave/
+ls
+la
+cd .Taniere_de_la_reine_araignee\ gFZqQQncnGJjAQoN iMSCGsjEzcAxYfCR/
+ls
+rm hAZilgCNIAvKhQqC_bebe_chauve_souris_IdZwfFYaumbhvNrw 
+rm 
+rm myOpXQjVHXXAIetB_reine_araignee_pyWhRqxksvCwuBxO
+GG
+gg
+pwd
+gsh reset
+cd .Taniere_de_la_reine_araignee\ cvwnRfVTXmEEoJdz xEXrLKutGjwyjWco/
+la
+rm NinqSlkPcuOUGDVg_bebe_chauve_souris_zEbEngRqeAhoiRPg POLCNqlHWQjetMen_reine_araignee_lOeWkVOHFpLFsqyR
+gg
+gsh reset
+cd .Taniere_de_la_reine_araignee\ woOBEwoFrqnQASYF yPQpzQMsWmEZBoHv/ && la
+rm MKnNFKkVrFdDGReM_reine_araignee_fCmrWrQgnAgPFpXJ
+gsh check
+gsh goal
+cd .Taniere_de_la_reine_araignee\ GyNUkZjVykcCfrSG LWmpGCFIdFdYYHeE/
+la
+gsh reset && rm PsfQuAVoLTFryCUf_reine_araignee_gWGIiymgOFzVutuQ && gsh check
+gsh reset
+cd .Taniere_de_la_reine_araignee\ ipZxlGaVhXYTCizL QLlABWnfqfTvDKDj/
+la
+rm bdXZNjxSXrwSFjBD_reine_araignee_MQRMORqUHabGUmsm && gsh check
+exit
+gsh gg
+gg
+gsh goal
+ xeyes
+xeyes &
+fsh check && gsh goal
+gsh check && gsh goal
+ls Jardin/Labyrinthe/
+cd Jardin/Labyrinthe/155925eef421ab53e4b32/
+ls
+cd 28d56f04c68a3fc6ff6/310c8a1bb083e0/
+ls
+cd
+mv Jardin/Labyrinthe/155925eef421ab53e4b32/28d56f04c68a3fc6ff6/310c8a1bb083e0/OOOOO_piece_de_bronze_OOOOO Foret/Hutte/Coffre/
+gsh check && gsh goal
+ls Foret/
+ls -a Foret/
+ls -R Jardin/Labyrinthe/
+mv Jardin/Labyrinthe/12bdbc97d956e7bd87b072867e2d/c3836c8cc8b3/9f50969f14c1c08fd9a80fe79e66f6:
+Jardin/Labyrinthe/12bdbc97d956e7bd87b072867e2d/c3836c8cc8b3/9f50969f14c1c08fd9a80fe79e66f6:
+mov Jardin/Labyrinthe/12bdbc97d956e7bd87b072867e2d/c3836c8cc8b3/9f50969f14c1c08fd9a80fe79e66f6/OOOOO_piece_d_argent_OOOOO Foret/Hutte/Coffre/
+mv Jardin/Labyrinthe/12bdbc97d956e7bd87b072867e2d/c3836c8cc8b3/9f50969f14c1c08fd9a80fe79e66f6/OOOOO_piece_d_argent_OOOOO Foret/Hutte/Coffre/
+gsh check && gsh goal
+ls -R Jardin/Labyrinthe/
+gsh goal
+man find
+find name 'piece_d_or'
+find -name 'piece_d_or'
+man find -name
+find --help
+find -newer 'piece'
+find -newer 'piece_d_or'
+find -iname 'pice_d_or'
+cat find -iname 'pice_d_or'
+find -iname 'pice_d_or'
+find -name 'pice_d_or'
+find -name 'pice_d_or' Jardin/Labyrinthe/
+find -name Jardin/Labyrinthe/ 'piece_d_or'
+find --help
+find Jardin/Labyrinthe/ 'piece_d_or'
+find Jardin/Labyrinthe/ '*piece_d_or*'
+find Jardin/Labyrinthe/ '*or*'
+find Jardin/Labyrinthe/ '*or*
+find Jardin/Labyrinthe/ *or*
+exit
+jkednl
+1-1
+
+gsh goal
+find Jardin/Labyrinthe/ *piece*
+find Jardin/Labyrinthe/ '*piece*'
+
+find -name Jardin/Labyrinthe/ 'piece'
+find -wholename Jardin/Labyrinthe/ 'piece'
+find -name Jardin/Labyrinthe/ 'piece'
+exit
+gsh goal
+find Jardin/Labyrinthe/ -name 'piece'
+find Jardin/Labyrinthe/ -name piece
+find -name piece
+find -iname "*git*"
+gsh check
+gsh goal 
+find Jardin/Labyrinthe/ -type f
+mv Jardin/Labyrinthe/6518fab5d9a19cf8d173e/eb947a66e8b/43d34b4a16/PieCe_D_oR_2 Jardin/Labyrinthe/6518fab5d9a19cf8d173e/824bddf7feb6aa8043548/c68ba312f6bbb1a71/piece_d_or_1 Foret/Hutte/Coffre/
+gsh check && gsh goal
+xeyes &
+xeyes
+ls 
+ls Montagne/
+cd Montagne/Grotte/
+ls
+ls Livre_de_potions/
+car t
+car Livre_de_potions/table_des_matieres 
+cat Livre_de_potions/table_des_matieres 
+cat Livre_de_potions/page_07
+gsh check
+head -n 1 Livre_de_potions/page_07
+gsh check
+ls servillus 
+ls -a servillus 
+cd Livre_de_potions/
+gsh goal
+cat page_07
+head -n 6 page_07
+gsh check
+cd ..
+head -n 6 Livre_de_potions/page_07
+gsh check
+gsh goal
+ls Livre_de_potions/
+cat Livre_de_potions/table_des_matieres 
+cat Livre_de_potions/page_12
+tail -n 9 Livre_de_potions/page_12 && gsh check
+tail -n 9 Livre_de_potions/page_12
+gsh check
+gsh goal
+exit
+gsh goal
+cat .joli_caillou 
+cd .local/
+ls
+ls -a
+cd share/
+ls -a
+ls -a nano
+cd ../../Montagne/Grotte/Livre_de_potions/
+cat table_des_matieres 
+cat page_01 page_02
+gsh check
+cd .. 
+cat Livre_de_potions/page_01 Livre_de_potions/page_02
+gsh check && gsh goal
+cd ~/Montagne/Grotte/
+gsh goal
+cat Livre_de_potions/table_des_matieres 
+cat Livre_de_potions/page_03 Livre_de_potions/page_04
+cat Livre_de_potions/page_03 
+tail -n 7 Livre_de_potions/page_03 && cat Livre_de_potions/page_04
+gsh check
+gsh goal
+head
+cat Livre_de_potions/page_13
+head -n 6 Livre_de_potions/page_13 | tail -n 3
+gsh check
+gsh goal
+psps
+ps
+kill 3
+ps
+kill 7456
+gsh check
+gsh goal
+ps
+ps && kill -s sortilege
+ps
+kill -n 10280
+ps
+kill -l
+gsh check
+ps
+kill 10572
+ps
+kill _s sortilege
+sortilege -s 
+kill -s sortilege
+ps
+kill -l sortilege
+l sortilege
+ps
+gsh goal
+_l
+-l
+ps
+kill -s 11163 -l KILL
+gsh check
+term
+ps
+kill 11542
+ps
+kill 11645
+ps
+kill 11678
+ps
+kill 11711
+ps 
+kill 
+kill --help
+ps
+kill -n 9 14090
+gsh check
+kill -l --help
+ps
+kill 14302
+kill -n 9 143
+ps
+kill 14394
+kill -n 14394
+kill -n 9 14394
+ps
+kill -n 9 14444
+gsh check
+exit
+gsh goal
+ps
+cd Chateau/Cave/
+ls
+rm -r *charbon
+ls
+gsh check
+ps
+kill -n 9 13702 13703 13704 13724 13725 13726
+ls
+rm -r *charbon
+ls -a
+gsh check
+gsh goal
+pstree
+ps
+pstree lutin_espiegle
+pstree -p lutin_espiegle
+pstree -p 
+pstree -p bas
+pstree -p bash
+pstree -p gnome
+pstree -p accounts-daemon
+gsh goal
+ps -p
+ps 
+kill 19209 19211 19213
+rm -r *char
+rm -r *charbon
+gsh check
+gsh goal
+pstree --help
+pstree
+pstree systemd
+kill lutin_espiegle
+kill systemd/systemd/gnome-terminal/bash/bash/lutin_espiegle/
+ps
+kill 39501 39499 39498
+rm -r *charbon
+gsh check
+gsh goal
+pstree -p
+kill 72333
+rm -r *charbon
+gsh check
+pstree -p
+kill 77767 77866 77698
+ps
+pstree
+pstree -p
+kill 81165
+ps
+kill 76827 76828 76829 && rm -r *charbon
+gsh check
+gsh goal
+gsh check
+gsh goal
+cd ..
+ls
+ls Batiment_principal/
+cd Batiment_principal/Bibliotheque/
+ls
+cat Mathematiques_en_premiere_annee 
+ls Bureau_de_Merlin/
+ls Bureau_de_Merlin/Tiroir/
+cat Bureau_de_Merlin/Tiroir/
+cat Bureau_de_Merlin/Tiroir/encre_et_parchemin 
+c8683ae2288c0ac89e5f17cc7c840a8811b7e744@23428
+ok < ~Chateau/Batiment_principal/Bibliotheque/Bureau_de_Merlin/Tiroir/encre_et_parchemin 
+ok < ~/Chateau/Batiment_principal/Bibliotheque/Bureau_de_Merlin/Tiroir/encre_et_parchemin 
+cat < ~/Chateau/Batiment_principal/Bibliotheque/Bureau_de_Merlin/Tiroir/encre_et_parchemin 
+head -n 1 < ~/Chateau/Batiment_principal/Bibliotheque/Bureau_de_Merlin/Tiroir/encre_et_parchemin 
+head -n 1 < ~/Chateau/Batiment_principal/Bibliotheque/Bureau_de_Merlin/Tiroir/encre_et_parchemin g
+gsh goal
+ls -a
+cat .Comment_tricher_aux_examens 
+gsh check < ~/Chateau/Batiment_principal/Bibliotheque/Mathematiques_en_premiere_annee
+gsh goal
+less .Comment_tricher_aux_examens 
+ls
+ cd Bureau_de_Merlin/
+ls -a
+ls
+ls | head -n 61 | tail -n 60 > inventaire.txt
+gsh check
+ls
+inventaire.txt
+nano inventaire.txt
+ls | head -n 61 | tail -n 60 
+12 * 8 + 7
+ls | head -n 102 | tail -n 101 > inventaire.txt
+gsh check
+ls | head -n 102 | tail -n 101 
+ls
+gsh goal
+mv inventaire.txt Tiroir/
+gsh check
+less Tiroir/inventaire.txt 
+nano Tiroir/inventaire.txt 
+gsh check
+ls
+less Tiroir/inventaire.txt 
+ls | head -n 102 | tail -n 101 > Tiroir/inventaire.txt
+gsh check
+ls
+ls | head -n 102 | tail -n 101 
+ls | head -n 101 | tail -n 100 > Tiroir/inventaire.txt
+gsh check
+gsh goal
+s -a
+ls -a
+grep gsh grimoire*
+grep -il gsh grimoire*
+grep -il gsh grimoire* 2> liste.txt
+cat liste.txt
+grep -il gsh grimoire* > liste.txt
+cat liste.txt
+gsh check
+grep -il gsh grimoire*
+gsh check
+gsh goal
+ls
+cd ..
+ls-a
+ls -a
+cd Bureau_de_Merlin/
+ls -a
+cat bougie 
+3e219f20e69ec0ba1d611107690c6c852f359eda@20544
+jgs
+cd ././././././././././././././././././././././././././././././././././././
+ls -a Tiroir/
+cat Tiroir/encre_et_parchemin 
+./Tiroir/encre_et_parchemin 
+sudo ./Tiroir/encre_et_parchemin 
+./bougie
+./Merlin
+./c8683ae2288c0ac89e5f17cc7c840a8811b7e744@23428
+./Tiroir/c8683ae2288c0ac89e5f17cc7c840a8811b7e744@23428
+./3e219f20e69ec0ba1d611107690c6c852f359eda@20544
+./3e219f20e69ec0ba1d611107690c6c852f359eda@20544/jgs
+./jgs
+grep * jgs
+grep ** jgs
+grep *?* jgs
+grep jgs *
+grep jgs Tiroir/
+grep jgs Tiroir/*
+grep * *
+gsh goal
+gsh check
+cat bougie 
+gsh check
+cat Tiroir/encre_et_parchemin 
+gsh check 
+gsh help
+gsh goal
+gsh check 
+ls -a
+ls -l
+grep * grimoire*
+grep jgs grimoire*
+head -n 1 bougie 
+grep 3e219f20e69ec0ba1d611107690c6c852f359eda grimoire*
+cat bougie
+gsh goal
+cd ..
+l
+ls -l
+ls -h
+cd ..
+ls -h
+ls
+cd Observatoire/
+ls
+ls -h
+ls carte_du_ciel 
+cat carte_du_ciel 
+apt-cache search jgs
+./merlin 
+ps
+gsh check
+./merlin 
+merlin
+cat merlin 
+gsh check $@
+ls
+ls -a
+./merlin > merlin.txt
+cat merlin.txt
+gsh check
+./merlin > merlin.txt
+cat merlin.txt
+./merlin 2> merlin.txt
+cat merlin.txt
+cat merlin.txt > merlin.txt
+cat merlin.txt
+merlin.txt
+./merlin < merlin.txt
+./merlin < carte_du_ciel 
+gsh check 
+cat merlin.txt > merlin.txt
+./merlin 2> merlin.txt
+merlin.txt
+cat merlin.txt
+./merlin < merlin.txt
+./merlin < carte_du_ciel 
+gsh check 
+./merlin < carte_du_ciel 2> merl.txt
+cat merl.txt
+gsh check
+./merlin < carte_du_ciel 2> merl.txt
+gsh check
+./merlin < carte_du_ciel > fin.txt
+gsh check < fin.txt
+./merlin < carte_du_ciel 2> fin.txt
+gsh check < fin.txt
+cd && tree
+gsh goal
+tree -a
+gsh goal
+cd Chateau/Batiment_principal/Salle_du_trone/
+ls
+cd Chambre_du_roi/
+sudo Chambre_du_roi/
+chmod --help
+chmod -f Chambre_du_roi/
+chmod -f Chambre_du_roi/ --silent
+chmod -f Chambre_du_roi/ silent
+ls -la
+cd ./
+man chmod
+chmod +x Chambre_du_roi/
+cd Chambre_du_roi/
+ls
+ms -a
+ls -a
+gsh check
+gsh goal
+ls -l
+cd ..
+ls -l
+cd Chambre_du_roi/
+gsh goal
+ls
+cat bout_de_papier 
+gsh check 
+ls -a
+cat .bout_de_papier_secret 
+chmod +x .bout_de_papier_secret 
+cat .bout_de_papier_secret 
+man chmod
+chmod +r .bout_de_papier_secret 
+cat .bout_de_papier_secret 
+gsh check
+gsh goal
+cd ..
+ls -hla
+chmod --help
+chmod +x Coffre_fort/
+chmod +r Coffre_fort/
+chmod +s Coffre_fort/
+cd C
+cd Coffre_fort/
+ls
+cat couronne 
+chmod +r couronne 
+cat couronne 
+mv --help
+mv couronne ~/Foret/Hutte/Coffre/
+chmod +s couronne 
+mv couronne ~/Foret/Hutte/Coffre/
+chmod +t couronne 
+mv couronne ~/Foret/Hutte/Coffre/
+chmod +x couronne 
+mv couronne ~/Foret/Hutte/Coffre/
+chmod +w couronne 
+mv couronne ~/Foret/Hutte/Coffre/
+chmod --help
+chmod +X couronne 
+mv couronne ~/Foret/Hutte/Coffre/
+chmod -t ../Coffre_fort/
+mv couronne ~/Foret/Hutte/Coffre/
+chmod -w ../Coffre_fort/
+mv couronne ~/Foret/Hutte/Coffre/
+chmod -s ../Coffre_fort/
+mv couronne ~/Foret/Hutte/Coffre/
+chmod +s ../Coffre_fort/
+mv couronne ~/Foret/Hutte/Coffre/
+chmod +w ../Coffre_fort/
+mv couronne ~/Foret/Hutte/Coffre/
+gsh check
+gsh goal
+exit
+gsh goal
+tree Jardin/Labyrinthe/
+cd Jardin/Labyrinthe/
+find -type f
+cat ./552993ed3d3f8c2451c9f13b5/f40b4a933b884/15d4ace01b4b9fc40c48/62617
+cat ./552993ed3d3f8c2451c9f13b5/5383b3e25014a7/8507aecae44/30861
+cat ./ca7035318c0a87398f88141d69ac0/a4d4dd9e50c07278ff37b463ae44f/15378ae299aaccdf387b7030/31963
+cat ./ca7035318c0a87398f88141d69ac0/700be3bea5c626c80be5332/bb05c34db5a4/32521
+mv ./ca7035318c0a87398f88141d69ac0/700be3bea5c626c80be5332/bb05c34db5a4/32521 ../../Foret/Hutte/Coffre/
+gsh check
+gsh goal
+find -type f | grep diamant
+grep --help
+find -type f 
+grep diamant
+grep --help
+grep -w diamant
+find -type f | grep -s diamant
+find -type f | grep -s di
+find -type f | grep 
+cat ./32c9216007cb6e4ce165f9f3416/30cf78c46a75e97b0254/fba15f8bccb67c18b17f8f4
+grep cailloux ./32c9216007cb6e4ce165f9f3416/30cf78c46a75e97b0254/
+grep cailloux ./32c9216007cb6e4ce165f9f3416/30cf78c46a75e97b0254/fba15f8bccb67c18b17f8f4
+gsh goal
+find type -f
+find -type f
+find -type f | grep -l diamant
+find -type f | grep -l "diamant"
+find -type f | grep -l diamant
+find -type f | xargs grep -l diamant
+./4672aef722ec4301/f08898ae61ad9f7f8a760478e/f02a6c6fb595f115ac9
+mv ./4672aef722ec4301/f08898ae61ad9f7f8a760478e/f02a6c6fb595f115ac9 ~/Foret/Hutte/Coffre/
+gsh check
+gsh goal
+cd
+ls Echoppe/
+cd ..
+cd ../../../..
+cd home/lepotototor/Téléchargements/
+ls
+cd gameshell/
+ls
+bash start.sh
+cd
+pwd
+gsh goal
+cd Echoppe/
+ls
+ls -hal
+gsh goal
+gsh reset
+tree
+cat fffd0361769d8c_objet_sans_interet_fffd0361769d8cbd
+xeyes & && ls && ls && ls
+ls
+cat 7febc9702ec4a3_objet_sans_interet_7febc9702ec4a303
+cd 7febc9702ec4a3_objet_sans_interet_7febc9702ec4a303
+find -type f
+find -type f 2> txt.txt
+txt.txt
+cat txt.txt
+grep roi
+xargs grep roi
+ls | xargs grep roi
+gsh reset 
+ls && cat txt.txt && find -type f | xargs grep roi > t.txt && apt-cache search nekflnekjvnekvnekjvbjnjknckj && tree
+ls | grep -v sans_interet
+cat 85428abd3_p_a_r_c_h_e_m_i_n_85428abd3d6db703
+ls | grep -v sans_interet > ../../../.. rep.txt
+ls | grep -v sans_interet > ~/rep.txt
+ls | grep -v sans_interet | cat > ~/rep.txt
+ls | grep -v sans_interet | cat 
+ls | grep -v sans_interet 
+cat 85428abd3_p_a_r_c_h_e_m_i_n_85428abd3d6db703 > ~/rep.txt
+ls | grep -v sans_interet | grep Roi
+ls | grep -v sans_interet 
+grep Roi 85428abd3_p_a_r_c_h_e_m_i_n_85428abd3d6db703
+ls | grep -v sans_interet 
+grep Roi 85428abd3_p_a_r_c_h_e_m_i_n_85428abd3d6db703
+gsh goal
+gsh reset
+grep Roi 85428abd3_p_a_r_c_h_e_m_i_n_85428abd3d6db703
+ls | grep -v sans_interet 
+gsh reset
+ls | grep -v sans_interet
+grep Roi 85428abd3_p_a_r_c_h_e_m_i_n_85428abd3d6db703
+gsh check
+gsh goal
+wc --help
+ls | grep -v sans_interet | wc -l PAYÉ
+gsh reset && gsh check
+ls
+ls | grep -v sans_interet 
+grep Roi 3d47e91bc9df09_p_a_r_c_h_e_m_i_n_3d47e91bc9df0979 | grep PAYÉ
+grep *_p_a_r_c_h_e_m_i_n_* PAYÉ | wc -lines
+grep *_p_a_r_c_h_e_m_i_n_* PAYÉ 
+grep PAYÉ *_p_a_r_c_h_e_m_i_n_* | wc -lines
+grep PAYÉ *_p_a_r_c_h_e_m_i_n_* 
+grep -v PAYÉ *_p_a_r_c_h_e_m_i_n_* 
+grep -v PAYÉ *_p_a_r_c_h_e_m_i_n_* | wc
+wc --help 
+gsh reset
+grep -v PAYÉ *_p_a_r_c_h_e_m_i_n_* | wc
+gsh check
+gsh goal
+cd
+cd Chateau/
+ls
+Observatoire/
+cd Batiment_principal/
+ls
+Bibliotheque/
+cd Bibliotheque/Bureau_de_Merlin/
+cd Tiroir/
+ls -a
+cat message_secret
+gsh goal
+tr "a-z" "j-za-i" < message_secret 
+tr "a-z" "i-za-j" < message_secret 
+tr "a-z" "j-za-k" < message_secret 
+tr "a-z" "k-za-l" < message_secret 
+tr "a-z" "l-za-m" < message_secret 
+tr "a-z" "m-za-n" < message_secret 
+cd ../../../../Cave/
+ls -hal
+oadj
+gsh check
+gsh goal
+gsh HELP
+gsh welcome 
+gsh goal 43
+gsh goal 44
+ls
+rm **
+ls
+ls .
+cd .
+cd ..
+ls
+exit
+gsh HELP
+gsh index
+gsh check
+gsh index
+gsh help
+gsh HELP
+exit
+gsh index
+goto 35
+gsh goto 35
+gsh index
+gsh goal
+cd Chateau/Batiment_principal/Salle_du_trone/
+ls
+cd Chambre_du_roi/
+chmod +r Chambre_du_roi/
+cd Chambre_du_roi/
+chmod +x Chambre_du_roi/
+cd Chambre_du_roi/
+gsh check
+gsh goal
+chmod +r .bout_de_papier_secret 
+cat .bout_de_papier_secret 
+gsh check
+tree
+tree -a
+gsh goal
+cd ../
+chmod +x Coffre_fort/
+cd Coffre_fort/
+ls
+cd ..+
+cd ../
+ls Coffre_fort/
+chmod +w Coffre_fort/
+ls Coffre_fort/
+chmod +s Coffre_fort/
+ls Coffre_fort/
+chmod +t Coffre_fort/
+ls Coffre_fort/
+chmod +X Coffre_fort/
+ls Coffre_fort/
+chmod --help
+chmod +rwxXst Coffre_fort/
+ls Coffre_fort/
+chmod -rwxXst Coffre_fort/
+ls Coffre_fort/
+chmod -r Coffre_fort/
+chmod +r Coffre_fort/
+ls Coffre_fort/
+chmod +x Coffre_fort/
+chmod +s Coffre_fort/
+ls Coffre_fort/
+cat Coffre_fort/couronne 
+cd Coffre_fort/
+cd ..
+chmod +t Coffre_fort/
+cat Coffre_fort/couronne 
+chmod +w Coffre_fort/
+cat Coffre_fort/couronne 
+chmod +X Coffre_fort/
+cat Coffre_fort/couronne 
+chmod +r Coffre_fort/
+cat Coffre_fort/couronne 
+chmod +rwxXst Coffre_fort/
+cat Coffre_fort/couronne 
+chmod -rwXs Coffre_fort/
+cat Coffre_fort/couronne 
+cd Coffre_fort/
+chmod +r Coffre_fort/
+cd Coffre_fort/
+chmod +s Coffre_fort/
+cd Coffre_fort/
+ls -l
+chmod +w Coffre_fort/
+cd Coffre_fort/
+ls -l
+chmod +x Coffre_fort/
+cd Coffre_fort/
+cat couronne 
+ls -l
+chmod +rsx
+chmod +rsx couronne 
+cat couronne 
+mv couronne ~/Foret/Hutte/Coffre/
+gsh check
+gsh goal
+exit
+gsh HELP
+gsh test
+gsh goto 43
+gsh goal
+cd
+cd Jardin/Labyrinthe/
+find type -f
+find -type f
+find -type f | grep -v cailloux
+find -type f | grep cailloux
+cat ./df495410d74c5f1bec1/77fa04c4624d081a3bd1e2d2cfd1/b354b3f8b3266cff26f48aa/28650
+cat ./df495410d74c5f1bec1/94726c8e5b572c2a10adeccb5ef/867e4505891879ebcf63/16681
+cat ./f90769222e53410a73fff4071/451f1617cb1545f091a835de/ecdb51236/32521
+mv ./f90769222e53410a73fff4071/451f1617cb1545f091a835de/ecdb51236/32521 ~/Foret/Hutte/Coffre/
+gsh check
+gsh goal 43
+gsh goal
+gsh goto 38
+find -type f | xargs grep -v cailloux
+mv ./80bd6e791e1fcd9a8ae3/719d9b7b2fabce10b/43e0db755405adf7ba4/64496 ~/Foret/Hutte/Coffre/
+gsh check
+find -type f | xargs grep -v cailloux
+mv ./0a25f9990246b638/dda720d894a1f8c/7c1a92849d21077d459ffce408c43e4 ~/Foret/Hutte/Coffre/
+gsh check
+cd 
+ch Echoppe/
+cd Echoppe/
+ls
+ls | grep -v sans_interet
+cat *_p_a_r_c_h_e_m_i_n_*
+grep Roi _p_a_r_c_h_e_m_i_n_ | grep -v PAYÉ
+grep Roi *_p_a_r_c_h_e_m_i_n_* | grep -v PAYÉ
+gsh reset
+grep Roi *_p_a_r_c_h_e_m_i_n_* | grep -v PAYÉ
+gsh check
+gsh goal
+grep Roi *_p_a_r_c_h_e_m_i_n_* | grep -v PAYÉ | wc
+gsh check
+grep -v PAYÉ | wc
+grep -v PAYÉ *_p_a_r_c_h_e_m_i_n_*| wc
+gsh reset
+grep -v PAYÉ *_p_a_r_c_h_e_m_i_n_*| wc
+gsh check
+gsh goal
+cd ~/Chateau/Batiment_principal/Bibliotheque/Bureau_de_Merlin/Tiroir/
+ls
+cat message_secret 
+tr "a-z" "i-z-j" message_secret 
+tr "a-z" "i-z-j" < message_secret 
+tr "a-z" "j-z-k" < message_secret 
+tr "a-z" "j-a-k" < message_secret 
+tr "a-z" "j-za-k" < message_secret 
+tr "a-z" "k-za-l" < message_secret 
+tr "a-z" "l-za-m" < message_secret 
+tr "a-z" "m-za-n" < message_secret 
+tr "a-z" "n-za-o" < message_secret 
+gsh hardreset
+gsh reset
+tr "a-z" "n-za-o" < message_secret 
+gsh HELP
+gsh hardreset
+tr "a-z" "n-za-o" < message_secret 
+tr "a-z" "m-za-n" < message_secret 
+tr "a-z" "l-za-m" < message_secret 
+tr "a-z" "o-za-p" < message_secret 
+gsh check
+gsh help
+gsh goto 44
+exit

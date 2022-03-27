@@ -1,0 +1,74 @@
+#!/bin/sh
+
+unset LS_COLORS
+unset EDITOR
+
+# get this game's configuration
+[ -f "$GSH_CONFIG"/config.sh ] && . "$GSH_CONFIG"/config.sh
+
+export PATH=$PATH:$GSH_BIN
+
+# source definition of `gsh` command
+# shellcheck source=./lib/gameshell.sh
+. "$GSH_LIB/gsh.sh"
+
+export PS1='[mission $(gsh pcm)] $ '
+export PS2="> "
+export PS3=""
+export PS4="+ "
+
+# export the COLUMNS variable so the reflow script can get the terminal size
+export COLUMNS
+
+# choose appropriate pager
+unset PAGER
+tempfile=$(mktemp)
+echo "TEST" | "$GSH_ROOT/scripts/pager" 2>"$tempfile" >/dev/null
+if [ -s "$tempfile" ]
+then
+  export PAGER=more
+fi
+rm -f "$mktemp"
+
+# try to prevent using sudo and similar
+su() {
+    echo "gsh: su: command not found" >&2
+}
+
+sudo() {
+    echo "gsh: sudo: command not found" >&2
+}
+
+doas() {
+    echo "gsh: doas: command not found" >&2
+}
+
+# remove quotes from filenames with special characters
+# NOTE: --literal doesn't exist in freebsd
+if ls --literal / &> /dev/null
+then
+    alias ls="ls --literal"
+fi
+
+# source additional dynamic rc files
+if [ -n "$(find "$GSH_CONFIG" -maxdepth 1 -name 'gshrc_*.sh' | head -n1)" ]
+then
+  for file in "$GSH_CONFIG"/gshrc_*.sh
+  do
+      # shellcheck source=/dev/null
+      . "$file"
+  done
+fi
+
+if [ -n "$(find "$GSH_CONFIG" -maxdepth 1 -name 'treasure_*.sh' | head -n1)" ]
+then
+  for file in "$GSH_CONFIG"/treasure_*.sh
+  do
+      # shellcheck source=/dev/null
+      . "$file"
+  done
+fi
+
+unset file MISSION_DIR
+
+[ "$GSH_MODE" != "DEBUG" ] && ! [ -d "$GSH_ROOT/.git" ] && gsh protect

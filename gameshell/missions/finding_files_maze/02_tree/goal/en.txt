@@ -1,0 +1,17 @@
+Mission goal
+============
+
+Find the silver coin in the maze in the garden and move it to your 
+chest using the shell.
+
+
+Useful commands
+===============
+
+ls -R
+  Print the list of all files / directory, including those in 
+  sub-directories (recursively).
+
+tree
+  Print the tree of files and directories, starting from the 
+  current working directory.

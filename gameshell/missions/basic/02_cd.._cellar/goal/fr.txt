@@ -1,0 +1,24 @@
+Objectif
+========
+
+Allez dans la cave du château.
+
+
+Objectif secondaire
+-------------------
+
+Apprenez à faire la différence entre ``cd -`` et ``cd ..``.
+
+
+Commandes utiles
+================
+
+cd -
+  Retourne dans le lieu précédent.
+
+cd ..
+  Se déplace dans le répertoire parent (le lieu qui se trouve 
+  "avant" le lieu actuel dans la liste donnée par ``pwd``).
+
+pwd
+  Affiche la position actuelle.

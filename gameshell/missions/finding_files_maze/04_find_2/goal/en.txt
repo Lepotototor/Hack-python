@@ -1,0 +1,44 @@
+Mission goal
+============
+
+Look for the ruby in the maze in the garden, and move it to your 
+chest.
+
+Hint
+----
+
+The filename does not contain the string "ruby". Since there aren't 
+many files in the maze, a possible strategy is to look for all 
+**file** (as opposed to directories), and check by hand which one 
+contains the string "ruby".
+
+
+Useful commands
+===============
+
+find
+  Search files / directories from the current working directory.
+
+  Conditions may be added about names, size, modification date, etc.
+  An interesting condition is:
+    -type TYPE
+
+cat FILE
+  Output the content of the file on the screen.
+
+man COMMAND
+  Display the manual of the command.
+
+  Important key bindings:
+    q           quit
+    Space       scroll down one page
+    / STRING    search for the string
+    n           find the next occurrence of the
+                search string
+
+Remark
+------
+
+The description of the ``find`` command is deliberately kept short. 
+You will find more information in the manual. (You can for example 
+search for the string "-type" in the manual.)

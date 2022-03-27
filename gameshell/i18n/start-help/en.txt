@@ -1,0 +1,27 @@
+options:
+  -h      this message
+
+  -P      passport mode: ask for name / emails of player
+  -A      anonymous mode
+  -d      debug mode
+  -D      verbose debug mode
+
+  -C      continue current game (if relevant)
+  -R      reset game
+
+  -L ...  set LANGUAGE variable (ex: -L fr:it:en)
+          On non GNU systems, set the variable LC_MESSAGES
+          to a valid locale.
+
+  -B      use bash
+  -Z      use zsh
+
+  -q      quiet: don't show information messages
+  -n      black and white: don't use ANSI escape codes for color
+  -c ...  give that command to GameShell (for testing)
+
+The following options are only available when GameShell is run from 
+an executable archive.
+  -X      only extract tgz archive
+  -K      do not remove GameShell temporary directory on exit
+

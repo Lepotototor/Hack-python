@@ -1,0 +1,73 @@
+Commands specific to GameShell
+==============================
+
+gsh assert condition [msg]
+  check if the condition is true
+  if not, display an error message
+
+gsh assert check true/false [msg]
+  check the current mission's goal has been achieved
+  if the result doesn't coincide with the expected result, display 
+  an error message
+
+gsh auto                              (ADMIN)
+  source the current mission's automatic script, if it exists
+
+gsh check
+  check whether the current mission's goal has been achieved or 
+  not
+
+gsh exit
+  quit GameShell
+  (you can start from the current mission by running the start.sh 
+  script with the "-C" flag)
+
+gsh goal [N]
+  show the current mission's goal
+  if N is given, show the goal for mission N
+
+gsh goto N                            (ADMIN)
+  directly go to mission N
+  (no password necessary if N is a previous mission)
+
+gsh hardreset
+  reset the current mission by restarting the shell
+
+gsh HELP
+  this message
+
+gsh help
+  shorter help message
+
+gsh index
+  show list of missions, with their status
+
+gsh log [-v]
+  show the log file of gsh commands
+
+gsh pcm
+  print the current mission number
+
+gsh protect
+gsh unprotect
+  add / remove protection on GameShell directories
+
+gsh reset
+  reset the current mission
+
+gsh skip                              (ADMIN)
+  give up on the current mission and go to the next one
+  (no password necessary if the mission was completed at least 
+  once)
+
+gsh stat
+  display simple statistics about completed missions
+
+gsh systemconfig
+  display the system configuration
+
+gsh test
+  run the curent mission's test script, if it exists
+
+gsh welcome
+  show the welcome message

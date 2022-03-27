@@ -1,0 +1,24 @@
+Mission goal
+============
+
+The tapestries in the castle's great hall are also particularly 
+beautiful. Put a copy of each in your chest.
+
+
+Useful commands
+===============
+
+cp FILE1 FILE2 ... FILEn DIRNAME
+  Copy the files to the directory.
+  Remark: ``cp`` is an abbreviation of "copy".
+
+
+Shell patterns
+==============
+
+*
+  The "*" character stands in for any sequence of characters
+  (including an empty sequence).
+
+?
+  The "?" character stands in for any single character.

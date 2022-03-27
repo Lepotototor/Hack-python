@@ -1,0 +1,20 @@
+Objectif
+========
+
+Retrouvez la pièce d'argent dans le (petit) labyrinthe du jardin et 
+déplacez la dans votre coffre en utilisant le shell.
+
+
+Commandes utiles
+================
+
+ls -R
+  Affiche la liste des fichiers, y compris dans les 
+  sous-répertoires.
+
+tree
+  Affiche l'arborescence des fichiers et répertoires depuis le 
+  répertoire courant.
+
+  Remarque : la commande "tree" n'est pas standard et pas toujours 
+  installée par défaut.

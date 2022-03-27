@@ -1,0 +1,48 @@
+#!/bin/sh
+
+# inspired by cf https://stackoverflow.com/questions/7665/how-to-resolve-symbolic-links-in-a-shell-script
+# NOTE that you need traversal access to directories...
+
+realpath() (
+  CDPATH=
+  { \unalias command; \unset -f command; } >/dev/null 2>&1
+  [ -n "$ZSH_VERSION" ] && options[POSIX_BUILTINS]=on # make zsh find *builtins* with `command` too.
+
+  arg1=$1
+
+  max_link=32
+  target=$arg1
+  while [ "$max_link" -ge 0 ]
+  do
+    max_link=$((max_link - 1))  # avoid looping if a->b and b->a
+
+    if [ -d "$target" ]
+    then
+      # if we reach an existing directory, we're done
+      command cd -- "$target" 2> /dev/null || { echo "realpath: $arg1: cannot access final target $target" >&2; return 1; }
+      command pwd -P
+      return 0
+    elif [ -L "$target" ]
+    then
+      # if we reach a symbolic link, we resolve it using ls -l
+      dir=$(command dirname -- "$target")
+      command cd -- "$dir" 2> /dev/null || { echo "realpath: $arg1: cannot access intermediate directory $dir" >&2; return 1; }
+      target=$(command ls -l -- "$(command basename -- "$target")")
+      target=${target#* -> }
+    else
+      # in all other cases, we try going to the parent directory
+      # if that fails, we fail
+      # if that succeeds, we append the "basename" of the path
+      dir=$(command dirname -- "$target")
+      command cd -- "$dir" 2> /dev/null || { echo "realpath: $arg1: cannot access final dirname $dir" >&2; return 1; }
+      dir=$(command pwd -P)
+      [ "$dir" = "/" ] && dir=""
+      command printf '%s/%s\n' "$dir" "$(command basename -- "$target")"
+      return 0
+    fi
+  done
+  echo "realpath: $arg1: too many levels of symbolic links" >&2
+  return 1
+)
+
+realpath "$@"

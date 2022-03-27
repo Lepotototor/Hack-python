@@ -1,0 +1,55 @@
+Objectif
+========
+
+Les vieux livres d'alchimie de Merlin sont stockés dans son bureau, 
+dans la bibliothèque. Vous devez afficher une liste (exploitable) 
+des grimoires contenant le composé alchimique "gsh" (pour 
+"Glutathion").
+Attention, ce composé peut être écrit avec des lettres en minuscule 
+et majuscule mélangées.
+
+Certain grimoires sont cadenassés et vous n'avez pas la permission 
+de les consulter. Ignorez les.
+
+Remarque
+--------
+
+Seule la liste des grimoires est demandée. Les composés alchimiques 
+ne doivent pas être affichés.
+
+
+Commandes utiles
+================
+
+On peut par contre rediriger les deux affichages indépendamment.
+
+grep CHAINE FICHIER1 ... FICHIERn
+  Recherche une chaine dans les fichiers et affiche les lignes 
+  correspondantes.
+
+  Options utiles :
+    -l : n'affiche pas les lignes mais seulement le nom des fichiers
+         qui contiennent la chaine,
+    -i : ne différencie pas les majuscules et minuscules.
+
+COMMANDE  >  FICHIER
+  Envoie le résultat (stdout) de la commande dans le fichier.
+  (Le fichier est écrasé.)
+
+COMMANDE  2>  FICHIER
+  Envoie les messages d'erreurs (stderr) de la commande dans le 
+  fichier.
+  (Le fichier est écrasé.)
+
+/dev/null
+  Fichier "virtuel" universellement vide : tout ce qui y est envoyé 
+  disparait.
+
+Explications
+------------
+
+Chaque commande peut écrire sur l'écran de deux manières :
+  - affichage du résultat ("stdout")
+  - affichage des message d'erreur ("stderr")
+On ne peut pas différencier ces affichages.
+

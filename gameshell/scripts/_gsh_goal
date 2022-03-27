@@ -1,0 +1,40 @@
+#!/bin/sh
+
+. gsh_gettext.sh
+
+# display the goal of a mission given by its number
+_gsh_goal() {
+  if [ -n "$*" ]
+  then
+    MISSION_NB="$1"
+    MISSION_DIR="$(missiondir "$MISSION_NB")"
+  fi
+
+  SKIP_FILE=""
+  if [ -s "$MISSION_DIR/skip.txt" ]
+  then
+    SKIP_FILE="$MISSION_DIR/skip.txt"
+  elif [ -s "$(TEXTDOMAIN="$(textdomainname "$MISSION_DIR")" eval_gettext '$MISSION_DIR/skip/en.txt')" ]
+  then
+    SKIP_FILE="$(TEXTDOMAIN="$(textdomainname "$MISSION_DIR")" eval_gettext '$MISSION_DIR/skip/en.txt')"
+  fi
+
+  if [ -f "$MISSION_DIR/goal.sh" ]
+  then
+    . "$GSH_ROOT/lib/mission_source.sh"
+    mission_source "$MISSION_DIR/goal.sh" | parchment | pager
+  elif [ -f "$MISSION_DIR/goal.txt" ]
+  then
+    FILE="$MISSION_DIR/goal.txt"
+    parchment "$FILE" | pager
+  else
+    FILE="$(TEXTDOMAIN="$(textdomainname "$MISSION_DIR")" eval_gettext '$MISSION_DIR/goal/en.txt')"
+    parchment "$FILE" | pager
+  fi
+  if [ -n "$SKIP_FILE" ]
+  then
+    parchment -B Inverted "$SKIP_FILE"
+  fi
+}
+
+_gsh_goal "$@"

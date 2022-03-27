@@ -1,0 +1,9 @@
+Objectif
+========
+
+Pour progresser en magie, il faut maitriser le calcul mental !
+
+Préparez vous, car Merlin va tester votre précision sur des 
+additions.
+
+Lancez la commande ``gsh check`` pour commencer.

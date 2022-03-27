@@ -1,0 +1,29 @@
+Objectif
+========
+
+Combinez plusieurs commandes avec ``|`` pour connaitre le nombre 
+d'achats impayés.
+
+Remarque
+--------
+
+Vous ne pouvez utiliser qu'une seule commande.
+
+Vous pouvez réinitialiser le compteur avec la commande ``gsh 
+reset``, mais l'échoppe sera re-générée.
+
+
+Commandes utiles
+================
+
+grep [OPTIONS] CHAINE FICHIER1 ... FICHIERn
+  Affiche, parmi les lignes des fichiers, celle contenant la chaine.
+  Si aucun fichier n'est donné, ``grep`` utilise l'entrée standard.
+
+  Option utile :
+    -v : affiche les lignes qui **ne contiennent pas** la chaine.
+
+wc FICHIER
+  Compte le nombre de lignes / mots / lettres dans un fichier.
+  Si aucun fichier n'est spécifié, ``wc`` compte les lignes / mots / 
+  lettres lus sur l'entrée standard.
